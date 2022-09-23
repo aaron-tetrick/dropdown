@@ -19,20 +19,49 @@ nav {
     justify-content: center;
     margin: 15px;
     background-color: rgb(141, 141, 141);
+    gap: 1rem;
+    height: 50px;
 }
 
-nav button {
+.option {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 15px 45px;
+    padding: 0px;
     font-size: 1.5rem;
     height: 100%;
     color: white;
     background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-nav div:hover {
-    cursor: pointer;
+.dropdown > .option:focus,
+.option:hover {
     transition: 0.5s;
     background-color: rgb(75, 75, 75);
     color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown > .option:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
 }

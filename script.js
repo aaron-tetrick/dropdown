@@ -1,1 +1,1 @@
-console.log("HI")
+document.addEventListener('click', )
