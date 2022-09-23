@@ -48,14 +48,32 @@
                         <a href="#" class="link">Discord</a>
                     </div>
                 </div>
-
-
             </div>
         </div>
-
-
-        <button class="option">Option 2</button>
-        <button class="option">Option 3</button>
+        <div class="dropdown">
+            <button class="option">Option 2</button>
+            <div class="dropdown-menu">
+                <form class="login-form">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="option">Option 3</button>
+            <div class="dropdown-menu">
+                <ul class="list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Settings</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 </body>

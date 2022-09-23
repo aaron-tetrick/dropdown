@@ -28,7 +28,7 @@ nav {
     padding: 0px;
     font-size: 1.5rem;
     height: 100%;
-    color: white;
+    color: black;
     background: none;
     border: none;
     text-decoration: none;
@@ -38,7 +38,6 @@ nav {
 .dropdown.active > .option,
 .option:hover {
     transition: 0.5s;
-    background-color: rgb(75, 75, 75);
     color: white;
 }
 
@@ -64,4 +63,40 @@ nav {
     opacity: 1;
     transform: translateY(0px);
     pointer-events: auto;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.dropdown-links > a {
+    text-decoration: none;
+}
+
+.login-form > input {
+    margin-bottom: .5rem;
+}
+
+.list {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.list > li {
+    padding: .25rem;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+.list > li:hover {
+    transition: 0.3s;
+    background-color: rgb(226, 226, 226);
 }

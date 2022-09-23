@@ -7,8 +7,6 @@ document.addEventListener('click', e => {
 
     if (isDropdownBtn) {
         currentDropdown.classList.toggle('active');
-
-
     }
 
     document.querySelectorAll('.active').forEach(dropdown => {
