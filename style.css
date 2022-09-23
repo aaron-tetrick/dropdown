@@ -1,3 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     text-align: center;
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    background-color: rgb(141, 141, 141);
+}
+
+nav button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px 45px;
+    font-size: 1.5rem;
+    height: 100%;
+    color: white;
+    background: none;
+}
+
+nav div:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(75, 75, 75);
+    color: white;
 }
